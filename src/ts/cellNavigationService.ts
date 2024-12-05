@@ -38,14 +38,14 @@ export class CellNavigationService {
                 case Constants.KEY_DOWN :
                     pointer = this.getCellBelow(pointer);
                     break;
-                case Constants.KEY_RIGHT :
+                case Constants.KEY_LEFT :
                     if (this.gridOptionsWrapper.isEnableRtl()) {
                         pointer = this.getCellToLeft(pointer);
                     } else {
                         pointer = this.getCellToRight(pointer);
                     }
                     break;
-                case Constants.KEY_LEFT :
+                case Constants.KEY_RIGHT :
                     if (this.gridOptionsWrapper.isEnableRtl()) {
                         pointer = this.getCellToRight(pointer);
                     } else {
